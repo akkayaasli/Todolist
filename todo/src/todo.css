@@ -1,0 +1,377 @@
+/* TodoList.css */
+
+.todo-container {
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: background;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* background-color: #FFE6E6FA; */
+
+}
+
+@keyframes background {
+    0% {
+        background-image: url(../public/assets/back1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+        /*Sayfa kaydırıldığında görselin sabit kalmasını sağlar*/
+        height: 100%;
+    }
+
+    25% {
+        background-image: url(../public/assets/back2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        /*Sayfa kaydırıldığında görselin sabit kalmasını sağlar*/
+        height: 100%;
+    }
+
+    50% {
+        background-image: url(../public/assets/back3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        /*Sayfa kaydırıldığında görselin sabit kalmasını sağlar*/
+        height: 100%;
+    }
+
+    75% {
+        background-image: url(../public/assets/back4.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        /*Sayfa kaydırıldığında görselin sabit kalmasını sağlar*/
+        height: 100%;
+    }
+
+    100% {
+        background-image: url(../public/assets/back5.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        /*Sayfa kaydırıldığında görselin sabit kalmasını sağlar*/
+        height: 100%;
+    }
+
+
+}
+
+
+
+.todo-input {
+    width: 80%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+
+
+
+
+}
+
+
+
+
+
+table td {
+    border: 1px solid black;
+    background-color: #E3E3E3;
+}
+
+
+
+td {
+
+
+    color: black;
+}
+
+.tableTitle {
+    margin: 5px;
+    padding: 5px;
+}
+
+th {
+    background-color: #515459;
+
+
+    color: #fff;
+}
+
+tr.yellow-background {
+    background-color: yellow;
+}
+
+.time-exceeded {
+    background-color: lightcoral;
+}
+
+.time-ok {
+    background-color: lightblue;
+}
+
+button {
+    background-color: #F5F5DC;
+    /* Green */
+    border: none;
+    color: #333333;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: #C3D9B8;
+    color: 707880;
+    border: 2px solid #D5EDCB;
+    border-radius: 20px;
+
+}
+
+.button1:hover {
+    background-color: D5EDCB;
+    color: #374141;
+    border-radius: 60px;
+
+}
+
+
+.button2 {
+    background-color: #FF8A80;
+    color: 707880;
+    border: 2px solid #D98880;
+    border-radius: 20px;
+
+}
+
+.button2:hover {
+    background-color: #E57373;
+    color: #374141;
+    border-radius: 60px;
+}
+
+.button3 {
+    background-color: #BBDEFB;
+    color: #707880;
+    border: 2px solid #87CEEB;
+    border-radius: 60px;
+
+}
+
+.button3:hover {
+    background-color: #AED6F1;
+    color: #374141;
+
+    border-radius: 20px;
+
+}
+
+
+.button4 {
+    background-color: #D2B48C;
+    color: #707880;
+    border: 2px solid #8B4513;
+    border-radius: 60px;
+}
+
+.button4:hover {
+    background-color: #654321;
+    color: #D3D3D3;
+}
+
+.buttonDesign {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 5px;
+    border-radius: 60px;
+
+}
+
+.loginDesign {
+
+    background-color: rgba(245, 245, 220, 0.7);
+
+
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+
+.todoDesign {
+
+    position: absolute;
+    /* position: sticky; */
+
+    /* margin: auto; */
+
+    width: 50%;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(245, 245, 220, 0.5);
+    padding: 20px;
+    border: 1px solid #333;
+
+
+
+
+
+}
+
+.table-container {
+    /*   position: absolute; */
+
+
+
+    overflow: auto;
+
+    height: 40vh;
+    /* İçeriğin taşmasını engellemek için kaydırma çubuğunu gösterir */
+    /* display: inline-block; */
+    /* display: block; */
+    /* Tablonun blok düzenine sahip olmasını sağlar */
+    /* overflow-x: auto; */
+    /* Tablo yatay kaydırma çubuğunu gösterir (ihtiyaca bağlı) */
+
+    /* 
+    display: flex;
+    flex-direction: column; */
+    margin-top: 250px;
+
+
+
+}
+
+table {
+
+    border-collapse: collapse;
+    padding-top: 100px;
+    height: 300px;
+    /* Sabit bir yükseklik ayarlayın */
+
+
+
+
+}
+
+.DENEME {
+    position: relative;
+    height: 500px;
+    /*background-color: #73AD21;*/
+}
+
+
+/*NAVBAR Tasarım*/
+
+body {
+
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    /* background-color: #FFE6E6FA; */
+}
+
+
+
+
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    /* Başlık rengi */
+
+
+    text-align: center;
+
+
+
+}
+
+
+/* Navbar stilleri */
+.navbar {
+    background-color: #E3E3E3;
+    /* Navbar arka plan rengi */
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    /*z-index ilk divin navbarın en üstte olmasını sağlar*/
+
+}
+
+.navbar a {
+    float: right;
+    /* Linklerin sağa yaslanması */
+    display: block;
+    color: black;
+    /* Linklerin metin rengi */
+    text-align: center;
+    padding: 14px 16px;
+    /* Linklerin iç boşluğu */
+    text-decoration: none;
+}
+
+#icon {
+    float: left;
+    /* Linklerin sağa yaslanması */
+    display: block;
+    color: black;
+    /* Linklerin metin rengi */
+    text-align: center;
+    padding: 14px 16px;
+    /* Linklerin iç boşluğu */
+    text-decoration: none;
+}
+
+/* Ana içerik stil tanımlamaları */
+.content {
+    margin-top: 50px;
+    /* Navbar yüksekliği kadar boşluk bırakır */
+    padding: 20px;
+}
+
+/*setting tasarım*/
+.settDesign {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.settLabelDesign {
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
